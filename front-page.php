@@ -17,7 +17,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+			<div class="container">
+					<?php require get_template_directory() . '/inc/posts-slider.php'; ?>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
