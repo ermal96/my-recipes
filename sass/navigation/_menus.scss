@@ -30,7 +30,7 @@
             color: var(--gray-dark);
             font-weight: bold;
             &:last-child{
-                padding: 0 0 0 1.7rem;
+                padding:0;
                 @media(max-width: 991px){
                     padding: 1rem 0;
                 }
@@ -74,4 +74,16 @@
         }
     }
     
+}
+
+.admin-bar{
+    #navbarNavAltMarkup{
+        @media(max-width: 782px){
+            top: 134px;
+        }
+
+        @media(min-width: 783px){
+            top: 122px;
+        }
+    }
 }
