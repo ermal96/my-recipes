@@ -16,7 +16,7 @@
 	<footer id="footer" class="site-footer">
 		<div class="footer-wrapper">
 			<?php the_custom_logo(); ?>
-			<p><?php echo __( '&copy; Copyright ', 'my-recipes' ) . date( 'Y' ) . __(' te gjitha te drejtat e rezervuara', 'my-recipes'); ?></p>
+			<p><?php echo __( '&copy;  ', 'my-recipes' ) . date( 'Y' ) . __(' te gjitha te drejtat e rezervuara', 'my-recipes'); ?></p>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
