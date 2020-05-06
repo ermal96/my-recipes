@@ -28,20 +28,32 @@
 
 		<div class="container">
 
-		<nav class="navbar-expand-lg navbar-light ">
+		<nav class="mr-nav-top">
+			<div class="mr-social">
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+			</div>
 			<div class="mr-logo" >
 				<?php the_custom_logo(); ?>
 				<p><?php echo esc_attr__( get_bloginfo( 'name' ) ); ?></p>
 			</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+				<i class="fas fa-bars"></i>
 				</button>	
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<?php wp_nav_menu(); ?>
-					</div>
-				</div>
+
+			<div class="mr-search">
+				<i class="fas fa-search"></i>
+			</div>
 		</nav>
+
+			<div class="collapse navbar-collapse menu-bottom" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+							<?php wp_nav_menu(); ?>
+				</div>
+				<div class="mr-contact">
+					<a class="mr-btn-contact" href="#">Kontakt</a>
+				</div>
+			</div>
 
 		</div>
 	</header><!-- #masthead -->
