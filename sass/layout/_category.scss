@@ -1,0 +1,50 @@
+#category{
+    .entry-header-category{
+        padding: 4rem;
+        text-align: center;
+        background: url('images/banner.jpg');
+        position: relative;
+        margin-bottom: 4rem;
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 74, 82, 0.95);
+            z-index: 1;
+        }
+        .entry-title-category, .entry-meta-single{
+            z-index: 2;
+            position: relative;
+            color: var(--white);
+            a{
+                color: inherit;
+            }
+        }
+    }
+    a{ color: unset;
+        text-decoration: none;
+        article{
+            margin-bottom: 2rem;
+            img{
+              height: 220px;
+              object-fit: cover;    
+            }
+          }
+    }
+
+    .paginate-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .page-numbers{
+            font-size: 20px;
+            padding: 10px;
+        }
+        .current{
+            color: var(--red);
+        }
+    }
+}

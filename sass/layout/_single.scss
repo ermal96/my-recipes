@@ -1,0 +1,29 @@
+#single-post{
+    .entry-header-single{
+        padding: 4rem;
+        text-align: center;
+        background: url('images/banner.jpg');
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 74, 82, 0.95);
+            z-index: 1;
+        }
+        .entry-title-single, .entry-meta-single{
+            z-index: 2;
+            position: relative;
+            color: var(--white);
+            a{
+                color: inherit;
+            }
+        }
+    }
+    .entry-content-single{
+        margin:6rem auto
+    }
+}

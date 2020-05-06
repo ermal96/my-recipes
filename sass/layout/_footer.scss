@@ -1,0 +1,32 @@
+#footer{
+    padding: 3rem;
+    margin-top: 3rem;
+    background: url('images/banner.jpg');
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(44, 35, 35, 0.95);
+        z-index: 1;
+    }
+    .footer-wrapper{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        a{
+            img{
+                width: 90px;
+            }
+        }
+        p{
+            font-weight: bold;
+            margin-top: 1rem;
+            color: var(--white);
+        }
+    }
+}
