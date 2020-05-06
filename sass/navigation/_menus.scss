@@ -8,32 +8,31 @@
         width: 100%;
         left: 50%;
         transform: translateX(-50%);
-        top: 150px;
-        z-index: 10;
+        top: 90px;
+        z-index: 20;
     }
     ul{
         
         @media (max-width: 991px){
-            padding: 2rem;
+            padding: 1rem 2rem;
         }
 
-
-       
         list-style: none;
         margin: 0;
         padding: 0;
         li{
             @media(max-width: 991px){
                 display: block;
+                padding: 1rem 1rem 1rem 0;
             }
-            padding: 0.7rem;
+            padding: 1.7rem 1.7rem 1.7rem 0;
             display: inline-flex;
             color: var(--gray-dark);
             font-weight: bold;
             &:last-child{
-                padding: 0 0 0 1rem;
+                padding: 0 0 0 1.7rem;
                 @media(max-width: 991px){
-                    padding: 1rem;
+                    padding: 1rem 0;
                 }
             }
             position: relative;
@@ -61,4 +60,18 @@
             }
         }
     }
+
+    .mr-contact{
+        @media(max-width: 991px){
+            margin: 0 2rem 2rem 2rem;
+        }
+        .mr-btn-contact{
+            background: var(--red);
+            background: var(--red);
+            color: var(--white);
+            padding: .5rem 1rem;
+            border-radius: 5px;
+        }
+    }
+    
 }
