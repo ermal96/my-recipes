@@ -20,12 +20,12 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('loading'); ?>>
+<body <?php body_class( 'loading' ); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<div id="loader">
 		<div class="text-center">
-			<div class="spinner-border" role="status">
+			<div class="spinner-border text-danger" role="status">
 				<span class="sr-only">Loading...</span>
 			</div>
 		</div>
