@@ -9,10 +9,5 @@
 /**
  * Load init file.
  */
-require get_template_directory() . '/inc/init.php';
-
-/**
-* Include classes with Composer.
-*/
-require_once 'vendor/autoload.php';
+require get_template_directory() . '/includes/init.php';
 

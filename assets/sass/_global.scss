@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--headings-font);
+}
+
+body{
+    font-family: var(--main-font);
+    color: var(--gray-dark);
+    overflow-x: hidden;
+    letter-spacing: var(--font-spacing);
+    font-size: var(--font-size);
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1300px;
+    }
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.paginate-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page-numbers {
+        font-size: 20px;
+        padding: 10px;
+        color: unset;
+        text-decoration: none;
+    }
+    .current {
+        color: var(--red);
+    }
+   
+}

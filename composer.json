@@ -1,9 +1,0 @@
-{
-  "name": "crispybacon/my-recipes",
-  "description": "",
-  "autoload": {
-    "psr-4": {
-      "crispybacon\\my_recipes\\": "src/"
-    }
-  }
-}

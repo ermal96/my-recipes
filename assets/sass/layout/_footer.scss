@@ -1,0 +1,21 @@
+#footer {
+    padding: 3rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 1;
+    background: var(--footer-bg);
+    .footer-wrapper {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        a {
+            img {
+                width: 90px;
+            }
+        }
+        p {
+            margin-top: 1rem;
+            color: var(--white);
+        }
+    }
+}

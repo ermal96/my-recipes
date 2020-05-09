@@ -1,1 +1,0 @@
-var swiper = new Swiper('.posts-slider-conatiner');

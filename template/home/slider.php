@@ -1,0 +1,32 @@
+<?php
+	$args  = array(
+		'posts_per_page' => 6,
+		'order'          => 'ASC',
+		'post_type'      => 'recipe',
+	);
+	$query = new WP_Query( $args );
+?>
+
+<div class="posts-slider-conatiner">
+	<div class="swiper-wrapper">
+		<?php
+		while ( $query->have_posts() ) :
+				$query->the_post();
+			?>
+					<div style="background: url(<?php the_post_thumbnail_url(); ?>)" class="swiper-slide post-slider">
+						<div class="content-slider ">
+							<div class="post-slider-category"></div>
+							<h2><?php the_title(); ?></h2>
+							<a href="<?php the_permalink(); ?>" class="mr-slider-btn"><?php echo esc_attr( __( 'Read Recipe', 'my-recipes' ) ); ?></a>
+						</div>
+					</div>
+				<?php
+				endwhile;
+		wp_reset_postdata();
+		?>
+	</div>
+ </div>
+
+ 
+
+

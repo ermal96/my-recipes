@@ -1,0 +1,178 @@
+// Desktop Menu
+#menuDesktop {
+    display: none;
+    @media(min-width:992px) {
+            display: block;
+            border-top: 1px solid var(--light-gray);
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
+    
+    justify-content: flex-end;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            padding: 1.7rem 1.7rem 1.7rem 0;
+            display: inline-flex;
+            color: var(--gray-dark);
+            position: relative;
+            &:hover{
+                color: var(--red);
+                .sub-menu {
+                    display: block;
+                }
+            }
+            &:last-child {
+                padding: 0;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+            .sub-menu {
+                transition: 0.3s ease;
+                display: none;
+                width: 200px;
+                position: absolute;
+                top: 50px;
+                padding: 10px 0;
+                z-index: 10;
+                background: var(--white);
+                border: 1px solid var(--light-gray);
+                li {
+                    padding: 0 1rem;
+                }
+            }
+        }
+        .current-menu-item{
+            a{
+                position: relative;
+                color: var(--red);
+            }
+        }
+    }
+
+    .mr-contact {
+        .mr-btn-contact {
+            border: 2px solid var(--red);
+            padding: 0.4rem 1rem;
+            color: var(--red);
+            text-decoration: none;
+            transition: all 0.3 ease;
+            &:hover{
+                background: var(--red);
+                color: var(--white);
+            }
+        }
+    }
+
+}
+
+
+
+
+// Mobile Menu
+.admin-bar {
+    #mobileMenu {
+        top: var(--admin-bar);
+    }
+}
+
+#mobileMenu {
+    background: var(--white);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    padding: 2rem;
+    .mr-mobile-menu-wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        .mr-logo-menu-mobile{
+            display: flex;
+            align-items: center;
+            p {
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-size: 18px;
+                letter-spacing: 1px;
+                max-width: 90px;
+                line-height: 22px;
+                margin-left: 10px;
+            
+            }
+            img {
+                width: 70px;
+            }
+    
+        }
+        #menuMobileBtnHide {
+            padding: 0;
+            border-radius: 0;
+    
+        }
+    }
+    .navbar-nav-mobile {
+        margin-top: 2rem;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                color: unset;
+                padding: 10px 20px;
+                border-bottom: 1px solid var(--light-gray);
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 10px;
+                    height: 3px;
+                    background: var(--red);
+                }
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        } 
+    }
+
+    .mr-contact{
+        padding: 10px 20px;
+        color: unset;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 10px;
+            height: 3px;
+            background: var(--red);
+        }
+        .mr-btn-contact{
+            color: inherit;
+        }
+    }
+
+}
+
+
+.show {
+    @media(min-width:992px) {
+        display: none;
+    }
+}
