@@ -24,7 +24,7 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 		<!-- Theme Loader -->
-			<?php //mr_theme_loader(); ?>
+			<?php mr_theme_loader(); ?>
 		<!-- End Theme Loader -->
 	<header id="masthead" class="site-header">
 		<div class="container">
