@@ -18,7 +18,10 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="container">
-					<?php require get_template_directory() . '/template/home/slider.php'; ?>
+					<?php require get_template_directory() . '/template/home/slider-recipes.php'; ?>
+					<?php require get_template_directory() . '/template/home/popular-recipes.php'; ?>
+					<?php require get_template_directory() . '/template/home/collection.php'; ?>
+					<?php require get_template_directory() . '/template/home/cta.php'; ?>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

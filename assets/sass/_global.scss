@@ -1,16 +1,16 @@
 h1, h2, h3, h4, h5, h6{
-    font-family: var(--headings-font);
+    font-family: $headings-font;
 }
 
 body{
-    font-family: var(--main-font);
-    color: var(--gray-dark);
+    font-family: $main-font;
+    color: $secondary;
     overflow-x: hidden;
-    letter-spacing: var(--font-spacing);
-    font-size: var(--font-size);
+    letter-spacing: $font-spacing;
+    font-size: $font-size;
 }
 
-@media (min-width: 1200px){
+@media (min-width: $xl){
     .container{
         max-width: 1300px;
     }
@@ -24,6 +24,7 @@ img{
 
 .paginate-links {
     display: flex;
+    margin-top: 3rem;
     align-items: center;
     justify-content: center;
     .page-numbers {
@@ -33,7 +34,7 @@ img{
         text-decoration: none;
     }
     .current {
-        color: var(--red);
+        color: $primary;
     }
    
 }

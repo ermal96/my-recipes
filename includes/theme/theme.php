@@ -6,4 +6,5 @@ require 'theme-header.php';
 require 'menu-mobile.php';
 require 'menu-desktop.php';
 require 'search-form.php';
+require 'recipe-views.php';
 require 'acf.php';

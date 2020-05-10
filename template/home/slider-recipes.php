@@ -1,13 +1,19 @@
 <?php
-	$args  = array(
-		'posts_per_page' => 6,
-		'order'          => 'ASC',
-		'post_type'      => 'recipe',
+/**
+ * Template part for displaying recipes slider
+ *
+ * @package My_Recipes
+ */
+	$query = new WP_Query(
+		array(
+			'posts_per_page' => 6,
+			'order'          => 'ASC',
+			'post_type'      => 'recipe',
+		)
 	);
-	$query = new WP_Query( $args );
-?>
+	?>
 
-<div class="posts-slider-conatiner">
+<section class="recipes-slider-conatiner">
 	<div class="swiper-wrapper">
 		<?php
 		while ( $query->have_posts() ) :
@@ -16,7 +22,7 @@
 					<div style="background: url(<?php the_post_thumbnail_url(); ?>)" class="swiper-slide post-slider">
 						<div class="content-slider ">
 							<div class="post-slider-category"></div>
-							<h2><?php the_title(); ?></h2>
+							<h3><?php the_title(); ?></h3>
 							<a href="<?php the_permalink(); ?>" class="mr-slider-btn"><?php echo esc_attr( __( 'Read Recipe', 'my-recipes' ) ); ?></a>
 						</div>
 					</div>
@@ -25,7 +31,7 @@
 		wp_reset_postdata();
 		?>
 	</div>
- </div>
+ </section>
 
  
 

@@ -1,0 +1,83 @@
+#comments {
+    .comments-title {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .comment-metadata {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-left: 2px solid $accent;
+        padding-left: 8px;
+        a {
+            color: $secondary;
+        }
+    }
+    .comment-list {
+        list-style: none;
+        margin: 0;
+        border: 1px solid $light-gray;
+        padding: 35px 20px 20px 20px;
+        li {
+            margin-bottom: 2rem;
+            article {
+                footer {
+                    .reply {
+                        padding-bottom: 10px;
+                    }
+                    .comment-author {
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+            .children {
+                list-style: none;
+                margin-top: 1rem;
+                .reply {
+                    padding-bottom: 10px;
+
+                }
+            }
+        }
+    }
+    #respond {
+        margin-top: 2rem;
+        form {
+            .comment-form-comment {
+                margin: 0;
+                padding: 0;
+                textarea {
+                    width: 100%;
+                    border: 1px solid $light-gray;
+                }
+            }
+            .form-submit {
+                input {
+                    background: $accent;
+                    border: none;
+                    padding: 5px 17px;
+                }
+            }
+        }
+        .comment-form-author {
+            margin-top: 1rem;
+        }
+        .form-submit{
+            margin-top: 10px;
+        }
+        .comment-form-author,
+        .comment-form-email,
+        .comment-form-url {
+            label {
+                width: 100%;
+            }
+            input {
+                border: 1px solid $light-gray;
+                width: 100%;
+                padding: 4px;
+            }
+        }
+    }
+}

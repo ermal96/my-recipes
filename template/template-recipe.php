@@ -17,6 +17,9 @@
 
 		<div class="entry-content-single">
 			<div  class="container">
+			<div id="social-share">
+				<?php do_action( 'mr_social_share' ); ?>
+			</div>
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="mr-recipe-meta">
@@ -62,8 +65,10 @@
 						</div>
 					</div>
 
-					<div class="col-lg-6">
+					<div class="col-lg-6">	
+						<div class="recipe-image">
 						<?php the_post_thumbnail(); ?>
+						</div>
 					</div>
 
 				</div>

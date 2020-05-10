@@ -2,12 +2,12 @@
 .mr-search {
     display: none;
     position: relative;
-    @media(min-width:992px) {
+    @media(min-width: $lg) {
         display: flex;
     }
     i {
         font-size: 20px;
-        color: var(--social-color);
+        color: $social-color;
         cursor: pointer;
         width: 35px;
         height: 35px;
@@ -25,7 +25,7 @@
             input{
                 outline: none;
                 padding: 3px 10px;
-                border: 1px solid var(--light-gray);
+                border: 1px solid $light-gray;
             }
         }
     }

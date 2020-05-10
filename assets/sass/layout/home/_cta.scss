@@ -1,0 +1,55 @@
+.mr-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 4rem 1rem;
+    background: url('assets/images/banner.jpg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: $primary-light;
+        z-index: 1;
+    }
+    h2, a{
+        text-decoration: none;
+        z-index: 2;
+        color: $white;
+        position: relative;
+    }
+    .mr-cta-social{
+        font-size: $font-size *1.3;
+    }
+    #mr-subscribe-form{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        margin-top: 2rem;
+        input.email{
+            background: transparent;
+            outline: none;
+            border: 2px solid $white;
+            margin-right: 15px;
+            padding: 4px 16px;
+            &::placeholder{
+                color: $white;
+            }
+        }
+        input.button{
+            border: none;
+            background: $accent;
+            color: $secondary;
+            padding: 6px 16px;
+        }
+    }
+}

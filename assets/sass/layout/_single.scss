@@ -11,14 +11,14 @@
             top: 0;
             height: 100%;
             width: 100%;
-            background: rgba(255, 74, 82, 0.95);
+            background: $primary-light;
             z-index: 1;
         }
         .entry-title-single,
         .entry-meta-single {
             z-index: 2;
             position: relative;
-            color: var(--white);
+            color: $white;
             a {
                 color: inherit;
             }
@@ -28,6 +28,9 @@
         margin: 6rem auto
     }
 
+    .recipe-image{
+        margin-top: 2rem;
+    }
 
     .mr-recipe-meta-info {
         p {
@@ -36,7 +39,7 @@
                 font-size: 18px;
             }
             span {
-                border-bottom: 1px solid var(--red);
+                border-bottom: 1px solid $primary;
             }
         }
 
@@ -56,25 +59,21 @@
                 left: 0;
                 width: 10px;
                 height: 3px;
-                background: var(--warning);
+                background: $accent;
             }
         }
     }
 
     .mr-recipe-preparation-method {
         h4 {
-            color: var(--red);
+            color: $primary;
         }
         margin-top: 2rem;
         &-card {
-            line-height: 22px;
             margin-top: 2rem;
             margin-bottom: 2rem;
-            font-size: 15px;
-            letter-spacing: 1px;
-            border-left: 2px solid var(--light-gray);
-            padding-left: 2rem;
             padding-right: 2rem;
+            font-size: $font-size - 2;
         }
     }
 

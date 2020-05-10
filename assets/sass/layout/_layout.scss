@@ -5,7 +5,7 @@
     }
 
     div#loader {
-        background: var(--white);
+        background: $white;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -17,4 +17,68 @@
         z-index: 30;
     }
 
+}
+
+
+#social-share {
+    position: relative;
+    .open-social-sharing {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        background: none;
+        border: none;
+        outline: none;
+    }
+}
+
+.social-sharing-modal {
+    display: none;
+}
+
+.social-sharing-modal.visible {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    background: $white;
+    width: 390px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $light-gray;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    #link-text{
+        text-align: center;
+        margin-top: 15px;
+    }
+    h4{
+        margin-bottom: 1.5rem;
+    }
+    .socials {
+        margin-bottom: 2rem;
+        a {
+            color: unset;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 27px;
+        }
+    }
+    .copy-link {
+        input {
+            border: 2px solid $light-gray;
+            padding: 5px 20px;
+            outline: none;
+        }
+        button {
+            border: none;
+            background: $accent;
+            border-radius: 0;
+            padding: 7px 16px;
+        }
+    }
 }

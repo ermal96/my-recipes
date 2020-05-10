@@ -1,9 +1,9 @@
 // Desktop Menu
 #menuDesktop {
     display: none;
-    @media(min-width:992px) {
+    @media(min-width: $lg ) {
             display: block;
-            border-top: 1px solid var(--light-gray);
+            border-top: 1px solid $light-gray;
             margin-top: 2rem;
             display: flex;
             align-items: center;
@@ -18,10 +18,10 @@
         li {
             padding: 1.7rem 1.7rem 1.7rem 0;
             display: inline-flex;
-            color: var(--gray-dark);
+            color: $secondary;
             position: relative;
             &:hover{
-                color: var(--red);
+                color: $primary;
                 .sub-menu {
                     display: block;
                 }
@@ -41,8 +41,8 @@
                 top: 50px;
                 padding: 10px 0;
                 z-index: 10;
-                background: var(--white);
-                border: 1px solid var(--light-gray);
+                background: $white;
+                border: 1px solid $light-gray;
                 li {
                     padding: 0 1rem;
                 }
@@ -51,21 +51,21 @@
         .current-menu-item{
             a{
                 position: relative;
-                color: var(--red);
+                color: $primary;
             }
         }
     }
 
     .mr-contact {
         .mr-btn-contact {
-            border: 2px solid var(--red);
+            border: 2px solid $primary;
             padding: 0.4rem 1rem;
-            color: var(--red);
+            color: $primary;
             text-decoration: none;
             transition: all 0.3 ease;
             &:hover{
-                background: var(--red);
-                color: var(--white);
+                background: $primary;
+                color: $white;
             }
         }
     }
@@ -78,12 +78,12 @@
 // Mobile Menu
 .admin-bar {
     #mobileMenu {
-        top: var(--admin-bar);
+        top: $admin-bar;
     }
 }
 
 #mobileMenu {
-    background: var(--white);
+    background: $white;
     position: fixed;
     right: 0;
     top: 0;
@@ -110,7 +110,7 @@
             
             }
             img {
-                width: 70px;
+                width: $logo-width;
             }
     
         }
@@ -129,7 +129,7 @@
             li{
                 color: unset;
                 padding: 10px 20px;
-                border-bottom: 1px solid var(--light-gray);
+                border-bottom: 1px solid $light-gray;
                 position: relative;
                 &::before{
                     position: absolute;
@@ -139,7 +139,7 @@
                     left: 0;
                     width: 10px;
                     height: 3px;
-                    background: var(--red);
+                    background: $primary;
                 }
                 a{
                     text-decoration: none;
@@ -161,7 +161,7 @@
             left: 0;
             width: 10px;
             height: 3px;
-            background: var(--red);
+            background: $primary;
         }
         .mr-btn-contact{
             color: inherit;

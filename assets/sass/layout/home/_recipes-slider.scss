@@ -1,4 +1,4 @@
-.posts-slider-conatiner {
+.recipes-slider-conatiner {
     overflow: hidden;
     position: relative;
     .post-slider {
@@ -7,23 +7,21 @@
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
-        @media(max-width:768px) {
+        @media(max-width: $md) {
             min-height: 415px;
         }
         .content-slider {
             position: absolute;
             width: 35%;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             bottom: 0;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             flex-direction: column;
-            background: var(--white);
-            border: 1px solid var(--light-gray);
+            background: $white;
             padding: 2rem;
-            @media(max-width:567px) {
+            @media(max-width: $sm) {
                 width: 90%;
             }
             a,
@@ -34,15 +32,16 @@
 
             }
             .post-slider-category {
-                background: var(--red);
+                background: $primary;
                 padding: 2px 7px;
                 margin-bottom: 1rem;
-                color: var(--white);
+                color: $white;
 
             }
             .mr-slider-btn {
                 text-decoration: none;
-                border-bottom: 1px solid;
+                margin-top: 15px;
+                border-bottom: 2px solid;
             }
         }
     }

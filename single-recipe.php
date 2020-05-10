@@ -15,12 +15,16 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 
-				get_template_part( 'template/template','recipe' );
+				// set post views.
+				mr_set_rost_views( get_the_ID() );
 
-				// // If comments are open or we have at least one comment, load up the comment template.
-				// if ( comments_open() || get_comments_number() ) :
-				// comments_template();
-				// endif;
+				// get template.
+				get_template_part( 'template/template', 'recipe' );
+
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
 
 			endwhile; // End of the loop.
 			?>

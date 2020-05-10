@@ -1,14 +1,23 @@
-:root{
-    @media (max-width:782px) {
-     --admin-bar: 44px;
-    }
-    --main-font: 'Jost', sans-serif;
-    --headings-font:'PT Serif', serif;
-    --font-size:17px;
-    --font-spacing: 0.5px;
-    --admin-bar: 32px;
-    --light-gray: #ededed;
-    --footer-bg:#1b1d1f; 
-    --social-color:#616161;
+@media(max-width:782px) {
+    $admin-bar: 44px;
+}
+$main-font: 'Open Sans', sans-serif;
+$headings-font: 'PT Sans', sans-serif;
+$font-size: 17px;
+$font-spacing: 0;
+$admin-bar: 32px;
+$logo-width: 60px;
+$white: #fff;
+$light-gray: #ededed;
+$footer-bg: #1b1d1f;
+$social-color: #616161;
+$primary: #dc3545;
+$secondary: #181818;
+$accent: #ffc107;
+$primary-light: rgba(255, 74, 82, 0.95);
 
- }
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;

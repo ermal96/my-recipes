@@ -1,6 +1,6 @@
 #masthead {
     margin-top: 2rem;
-    @media(max-width:992px) {
+    @media(max-width: $lg) {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -22,16 +22,16 @@
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 &::first-letter {
-                    color: var(--red);
+                    color: $primary;
                 }
-                @media(max-width:567px) {
+                @media(max-width: $sm) {
                     display: none;
                 }
             }
             a {
                 img {
-                    width: 75px;
-                    @media(max-width:992px) {
+                    width: $logo-width;
+                    @media(max-width: $lg) {
                         width: 60px;
                     }
                 }
@@ -42,9 +42,9 @@
         outline: none;
         display: block;
         i {
-            color: var(--social-color);
+            color: $social-color;
         }
-        @media(min-width:992px) {
+        @media(min-width: $lg) {
             display: none;
         }
     }
@@ -58,7 +58,7 @@
         i {
             font-size: 20px;
             margin-right: 10px;
-            color: var(--social-color);
+            color: $social-color;
             &:last-child {
                 margin-right: 0;
             }

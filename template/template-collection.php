@@ -7,13 +7,15 @@
  * @package My_Recipes
  */
 ?>
-	<article class="mr-types-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-		<img src="<?php the_post_thumbnail_url(); ?>" class="" >
-		<div class="mr-meta-info">
-					<i class="fal fa-clock"></i>  	<?php echo get_field( 'recipe_time' ) . __( ' min', 'my-recipes' ); ?>
-				</div>
-			<div class="mr-types-card-body">
-				<h3 class="mr-types-card-title"><?php the_title(); ?></h3>
-				<a href="<?php the_permalink(); ?>" class="mr-type-btn"><?php echo esc_attr( __( 'See More', 'my-recipes' ) ); ?></a>
-			</div>
+	<article  class="mr-collection-recipe" style="background:url(<?php the_post_thumbnail_url(); ?>)" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+								<a href="<?php the_permalink(); ?>">
+									<div class="mr-collection-recipe-content">
+										<h5 class="mr-collection-recipe-title"><?php the_title(); ?></h5>
+										<div class="mr-collection-recipe-meta">
+											<span><i class="fal fa-hat-chef"></i> <?php the_field( 'recipe_skill_level' ); ?></span>
+											<span><i class="fal fa-clock"></i> <?php the_field( 'recipe_time' ); ?></span>
+											<span><i class="fal fa-utensils"></i> <?php the_field( 'recipe_serves' ); ?></span>
+										</div>
+									</div>
+								</a>
 	</article><!-- #post-<?php the_ID(); ?> -->

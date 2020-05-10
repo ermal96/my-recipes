@@ -3,7 +3,7 @@
     margin-top: 3rem;
     position: relative;
     z-index: 1;
-    background: var(--footer-bg);
+    background: $footer-bg;
     .footer-wrapper {
         position: relative;
         z-index: 2;
@@ -15,7 +15,7 @@
         }
         p {
             margin-top: 1rem;
-            color: var(--white);
+            color: $white;
         }
     }
 }
