@@ -10,7 +10,7 @@ function mr_menu_desktop() {
 					<?php wp_nav_menu(); ?>
 				</div>
 				<div class="mr-contact">
-					<a class="mr-btn-contact" href="#"><?php echo esc_attr( 'Contact', 'my-recipes' ); ?></a>
+					<a class="mr-btn-contact" href="mailto:contact@recetatemia.com"><?php esc_attr_e( 'Contact', 'my-recipes' ); ?></a>
 				</div>
 			</div>
 	<?php

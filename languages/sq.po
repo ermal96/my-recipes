@@ -4,15 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: My Recipes 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/my-recipes\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-05-10T12:51:26+02:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"PO-Revision-Date: 2020-05-10 12:58+0200\n"
+"X-Generator: Poedit 2.3\n"
 "X-Domain: my-recipes\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: sq\n"
 
 #. Theme Name of the theme
 msgid "My Recipes"
@@ -32,20 +34,19 @@ msgstr ""
 
 #: 404.php:19
 msgid "Sorry this page does not exist"
-msgstr ""
+msgstr "Na vjen keq por kjo faqe nuk egziston"
 
 #: 404.php:20
 msgid "Go back to home"
-msgstr ""
+msgstr "Kthehu ne faqen kryesore"
 
-#: category.php:20
-#: taxonomy-collection.php:24
+#: category.php:20 taxonomy-collection.php:24
 msgid " in total"
-msgstr ""
+msgstr " ne total"
 
 #: comments.php:49
 msgid "Comments are closed."
-msgstr ""
+msgstr "Komentet janë te mbyllura"
 
 #: footer.php:19
 msgid "&copy;  "
@@ -53,92 +54,93 @@ msgstr ""
 
 #: footer.php:19
 msgid " All right reserved"
-msgstr ""
+msgstr " Te gjitha të drejtat e rezervuara"
 
-#: includes/theme/menu-desktop.php:13
-#: includes/theme/menu-mobile.php:22
+#: includes/theme/menu-desktop.php:13 includes/theme/menu-mobile.php:22
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: includes/theme/search-form.php:10
 msgid "Search"
-msgstr ""
+msgstr "Kerko"
 
 #: includes/theme/supports.php:41
 msgid "Primary"
-msgstr ""
+msgstr "Kryesore"
 
 #: search.php:19
 msgid "Search results for "
-msgstr ""
+msgstr "Rezultatet e kerkimit per "
 
 #: template/home/collection.php:6
 msgid "Collections"
-msgstr ""
+msgstr "Koleksionet"
 
 #: template/home/cta.php:11
 msgid "Get latest recipes from us "
-msgstr ""
+msgstr "Merni recetat e fundit nga ne"
 
 #: template/home/cta.php:14
 msgid "Insert email"
-msgstr ""
+msgstr "Vendos email"
 
 #: template/home/cta.php:16
 msgid "Subscribe"
-msgstr ""
+msgstr "Abonohu"
 
 #: template/home/popular-recipes.php:19
 msgid "Popular Recipes"
-msgstr ""
+msgstr "Recetat me të shikuara"
 
 #: template/home/slider-recipes.php:26
 msgid "Read Recipe"
-msgstr ""
+msgstr "Lexo recetën"
 
-#: template/template-category.php:13
-#: template/template-recipe.php:33
+#: template/template-category.php:13 template/template-recipe.php:33
 msgid " min"
-msgstr ""
+msgstr " min"
 
 #: template/template-category.php:17
 msgid "See More"
-msgstr ""
+msgstr "Shiko më shumë"
 
 #: template/template-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nuk u gjetë asnjë gjë"
 
 #: template/template-none.php:18
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
+"Na vjen keq, por asgjë nuk përputhet me termat e kërkimit tuaj. Ju "
+"lutemi provoni përsëri me disa fjalë kyçe të ndryshme."
 
 #: template/template-page.php:25
 msgid "Pages:"
-msgstr ""
+msgstr "Faqet:"
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template/template-page.php:39
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: template/template-post.php:19
-#: template/template-recipe.php:14
+#: template/template-post.php:19 template/template-recipe.php:14
 msgid "Posted on "
-msgstr ""
+msgstr "Postuar në "
 
 #: template/template-recipe.php:29
 msgid "Preparation Skills "
-msgstr ""
+msgstr "Niveli i veshtirësisë "
 
 #: template/template-recipe.php:33
 msgid "Preparation Time "
-msgstr ""
+msgstr "Koha e përgatitjes "
 
 #: template/template-recipe.php:37
 msgid "Servings "
-msgstr ""
+msgstr "Shërbehet per "
 
 #: template/template-recipe.php:37
 msgid " persons"
-msgstr ""
+msgstr " persona"

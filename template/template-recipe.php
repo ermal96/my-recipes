@@ -30,11 +30,11 @@
 								</p>
 								<p class="mr-preparation-time">
 									<i class="fal fa-clock"></i> 
-									<?php echo __( 'Preparation Time ', 'my-recipes' ) . '<span>' . get_field( 'recipe_time' ) . '</span>' . __( ' Min', 'my-recipes' ); ?>
+									<?php echo __( 'Preparation Time ', 'my-recipes' ) . '<span>' . get_field( 'recipe_time' ) . '</span>' . __( ' min', 'my-recipes' ); ?>
 								</p>
 								<p class="mr-preparation-time">
 								<i class="fal fa-utensils"></i>
-									<?php echo __( 'Servings ', 'my-recipes' ) . '<span>' . get_field( 'recipe_serves' ) . '</span>'; ?>
+									<?php echo __( 'Servings ', 'my-recipes' ) . '<span>' . get_field( 'recipe_serves' ) . __( ' persons', 'my-recipes' ) . '</span>'; ?>
 								</p>
 							</div>
 							<div class="mr-recipe-meta-ingredients">
