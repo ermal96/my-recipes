@@ -6,16 +6,6 @@
         margin-bottom: 4rem;
         background-size: cover !important;
         background-position: center !important;
-        // &::after {
-        //     position: absolute;
-        //     content: "";
-        //     left: 0;
-        //     top: 0;
-        //     height: 100%;
-        //     width: 100%;
-        //     background: rgba(255, 74, 82, 0.3);
-        //     z-index: 1;
-        // }
         .header-bg{
             position: absolute;
             top: 0;
@@ -44,6 +34,8 @@
         background-position: center !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
+        position: relative;
+        margin-bottom: 2rem;
         a {
             color: unset;
             text-decoration: none;
