@@ -27,9 +27,22 @@
         right: 0;
         top: 0;
         z-index: 1;
-        background: none;
-        border: none;
         outline: none;
+        background: $white;
+        width: 55px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-right: 1px solid $light-gray;
+        border-top: 1px solid $light-gray;
+        @media (max-width: $lg) {
+            border: 1px solid $light-gray;
+        }
+        i{
+            font-size: $font-size * 1.3;
+        }
     }
 }
 
