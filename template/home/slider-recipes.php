@@ -7,7 +7,7 @@
 	$query = new WP_Query(
 		array(
 			'posts_per_page' => 6,
-			'order'          => 'ASC',
+			'order'          => 'DESC',
 			'post_type'      => 'recipe',
 		)
 	);
