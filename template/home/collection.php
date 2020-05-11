@@ -12,7 +12,7 @@ $collections = get_terms( 'collection' );
 				?>
 				<div class="mr-collection md-auto " style="background-image:url(<?php echo esc_attr( $image_url ); ?>);">
 						<span style="background:<?php echo esc_attr( $color ); ?>"></span>
-						<a  href="<?php echo esc_attr( get_site_url() . '/' . $collection->taxonomy . '/' . $collection->slug ); ?>"><h3><?php echo esc_attr( $collection->name ); ?></h3></a>
+						<a  href="<?php echo get_term_link( $collection ); ?>"><h3><?php echo esc_attr( $collection->name ); ?></h3></a>
 				</div>
 			<?php endforeach; ?>
 		</div>

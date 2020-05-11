@@ -23,7 +23,7 @@
 						<div class="content-slider ">
 							<div class="post-slider-category"></div>
 							<h3><?php the_title(); ?></h3>
-							<a href="<?php the_permalink(); ?>" class="mr-slider-btn"><?php echo esc_attr( __( 'Read Recipe', 'my-recipes' ) ); ?></a>
+							<a href="<?php echo get_the_post_thumbnail( 'mr-large-size' ); ?>" class="mr-slider-btn"><?php echo esc_attr( __( 'Read Recipe', 'my-recipes' ) ); ?></a>
 						</div>
 					</div>
 				<?php

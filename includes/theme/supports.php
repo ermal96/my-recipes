@@ -57,10 +57,14 @@ if ( ! function_exists( 'my_recipes_setup' ) ) :
 			)
 		);
 
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
+		// image sizes.
+		add_image_size( 'mr-small-size', 300, 300 );
+		add_image_size( 'mr-medium-size', 700, 500 );
+		add_image_size( 'mr-large-size', 1300, 700 );
+		add_image_size( 'mr-recipe-size', 600, 900 );
 		/**
 		 * Add support for core custom logo.
 		 *
