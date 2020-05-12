@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "dev": "npm-run-all --parallel watch:*",
+        "start": "npm-run-all --parallel watch:*",
         "build": "npm-run-all build-task:*",
         "build-task:scss-compile": "sass --style compressed assets/sass/style_frontend.scss style.css",
         "build-task:autoprefixer": "postcss style.css --use autoprefixer -o style.css",
