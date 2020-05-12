@@ -21,6 +21,8 @@
             flex-direction: column;
             background: $white;
             padding: 2rem;
+            border-bottom: 1px dotted $light-gray;
+            border-left: 1px dotted $light-gray;
             @media(max-width: $sm) {
                 width: 90%;
             }

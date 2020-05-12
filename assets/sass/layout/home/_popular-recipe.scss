@@ -3,6 +3,9 @@
     margin-top: 5rem;
     overflow: hidden;
     &-title{
+        @media (max-width: $sm) {
+           font-size: 1.7rem;
+        }
         margin-bottom: 2rem;
         border-bottom: 3px solid $accent;
         display: inline-block;
@@ -20,7 +23,7 @@
     }
     .swiper-button-next-popular-recipes{
         right: 0;
-        top: 35px;
+        top: 25px;
         outline: none;
         &::after{
             font-size: 20px;
@@ -30,7 +33,7 @@
     }
 
     .swiper-button-prev-popular-recipes{
-        top: 35px;
+        top: 25px;
         right: 50px;
         left: unset;
         outline: none;
@@ -49,8 +52,10 @@
         position: absolute;
         bottom: 0;
         width: 80%;
-        height: 90px;
+        height: auto;
         padding: 1rem;
+        border-bottom: 1px dotted $light-gray;
+        border-left: 1px dotted $light-gray;
         .mr-popular-recipe-title{
             position: relative;
             padding-left: 25px;
