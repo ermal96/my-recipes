@@ -19,11 +19,11 @@
 		while ( $query->have_posts() ) :
 				$query->the_post();
 			?>
-					<div style="background: url(<?php the_post_thumbnail_url(); ?>)" class="swiper-slide post-slider">
+					<div style="background: url(<?php the_post_thumbnail_url( 'large' ); ?>)" class="swiper-slide post-slider">
 						<div class="content-slider ">
 							<div class="post-slider-category"></div>
 							<h3><?php the_title(); ?></h3>
-							<a href="<?php echo get_the_post_thumbnail( 'mr-large-size' ); ?>" class="mr-slider-btn"><?php echo esc_attr( __( 'Read Recipe', 'my-recipes' ) ); ?></a>
+							<a href="<?php the_permalink(); ?>" class="mr-slider-btn"><?php echo esc_attr( __( 'Read Recipe', 'my-recipes' ) ); ?></a>
 						</div>
 					</div>
 				<?php

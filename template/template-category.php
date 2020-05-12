@@ -8,7 +8,7 @@
  */
 ?>
 	<article class="mr-types-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-		<img src="<?php the_post_thumbnail_url(); ?>" class="" >
+		<img src="<?php the_post_thumbnail_url( 'large' ); ?>" class="" >
 		<div class="mr-meta-info">
 					<i class="fa fa-clock"></i>  	<?php echo get_field( 'recipe_time' ) . __( ' min', 'my-recipes' ); ?>
 				</div>

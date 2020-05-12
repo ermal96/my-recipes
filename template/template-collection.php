@@ -7,7 +7,7 @@
  * @package My_Recipes
  */
 ?>
-	<article  class="mr-collection-recipe" style="background:url(<?php the_post_thumbnail_url(); ?>)" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+	<article  class="mr-collection-recipe" style="background:url(<?php the_post_thumbnail_url( 'medium_large' ); ?>)" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 								<a href="<?php the_permalink(); ?>">
 									<div class="mr-collection-recipe-content">
 										<h5 class="mr-collection-recipe-title"><?php the_title(); ?></h5>

@@ -24,7 +24,7 @@
 			while ( $query->have_posts() ) :
 					$query->the_post();
 				?>
-							<div class="swiper-slide mr-popular-recipe" style="background:url(<?php the_post_thumbnail_url(); ?>)">
+							<div class="swiper-slide mr-popular-recipe" style="background:url(<?php the_post_thumbnail_url( 'medium_large' ); ?>)">
 								<a href="<?php the_permalink(); ?>">
 									<div class="mr-popular-recipe-content">
 										<h5 class="mr-popular-recipe-title"><?php the_title(); ?></h5>

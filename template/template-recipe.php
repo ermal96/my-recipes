@@ -67,7 +67,7 @@
 
 					<div class="col-lg-6">	
 						<div class="recipe-image">
-						<?php the_post_thumbnail(); ?>
+						<?php the_post_thumbnail( 'medium_large' ); ?>
 						</div>
 					</div>
 
