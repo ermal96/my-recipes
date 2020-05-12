@@ -5,12 +5,12 @@
     "scripts": {
         "start": "npm-run-all --parallel watch:*",
         "build": "npm-run-all build-task:*",
-        "build-task:scss-compile": "sass --style compressed assets/sass/style_frontend.scss style.css",
+        "build-task:scss-compile": "sass --style compressed assets/sass/style.scss style.css",
         "build-task:autoprefixer": "postcss style.css --use autoprefixer -o style.css",
         "build-task:js": "touch scripts.min.js && concat -o scripts.min.js assets/js/*",
         "build-task:js-uglify": "uglifyjs scripts.min.js --compress --output scripts.min.js",
         "watch:js": "onchange 'assets/js/*' -- npm run build-task:js",
-        "watch:sass": "sass --watch assets/sass/style_frontend.scss style.css"
+        "watch:sass": "sass --watch assets/sass/style.scss style.css"
     },
     "keywords": [],
     "author": "",
