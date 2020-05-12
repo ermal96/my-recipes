@@ -9,12 +9,12 @@
     var mobileMenu = $('#mobileMenu');
 
     menuMobileBtnShow.click(function(){
-       mobileMenu.addClass('show');
+       mobileMenu.slideDown();
     })
 
 
     menuMobileBtnHide.click(function(){
-        mobileMenu.removeClass('show');
+        mobileMenu.slideUp();
     })
 
 
