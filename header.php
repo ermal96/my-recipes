@@ -17,6 +17,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<meta name="google-site-verification" content="Etl65TadULD0kvXHIr_LsHR-AirM8H7JVI1tthSAq8o" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119596004-3"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-119596004-3');
+	</script>
+
 	<?php wp_head(); ?>
 </head>
 
