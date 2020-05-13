@@ -3,6 +3,6 @@
  *
  */
 ( function($) {
-    // $('#loader').fadeOut().remove();
-    // $('body').removeClass('loading');
+    $('#loader').fadeOut().remove();
+    $('body').removeClass('loading');
 } )(jQuery);
