@@ -9,6 +9,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        text-align: center;
     }
     .mr-collection{
         @media (max-width: $lg) {
