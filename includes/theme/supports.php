@@ -42,7 +42,7 @@ if ( ! function_exists( 'my_recipes_setup' ) ) :
 			)
 		);
 
-		/*
+		/*<?php mr_theme_loader(); ?>
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
@@ -92,5 +92,3 @@ function my_recipes_content_width() {
 }
 
 add_action( 'after_setup_theme', 'my_recipes_content_width', 0 );
-
-

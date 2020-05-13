@@ -7,25 +7,19 @@ function my_recipes_scripts() {
 
 	// enqueue styles.
 	wp_enqueue_style(
-		'fontawesome',
-		get_template_directory_uri() . '/assets/library/fontawesome/css/all.min.css',
+		'opensans',
+		'//fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap',
 		array(),
 		1
 	);
 
 	wp_enqueue_style(
-		'bootstrap',
-		get_template_directory_uri() . '/assets/library/bootstrap/css/bootstrap.min.css',
+		'ptsans',
+		'//fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap',
 		array(),
 		1
 	);
 
-	wp_enqueue_style(
-		'swiperjs',
-		get_template_directory_uri() . '/assets/library/swiperjs/css/swiper.min.css',
-		array(),
-		1
-	);
 
 	wp_enqueue_style(
 		'my-recipes-style',
@@ -34,22 +28,13 @@ function my_recipes_scripts() {
 		filemtime( get_template_directory() . '/style.css' )
 	);
 
-	// enqueue scripts.
-	wp_enqueue_script(
-		'bootstrap',
-		get_template_directory_uri() . '/assets/library/bootstrap/js/bootstrap.min.js',
+	wp_enqueue_style(
+		'fontawesome',
+		get_template_directory_uri() . '/assets/fonts/fontawesome/css/all.min.css',
 		array(),
-		1,
-		true
+		1
 	);
 
-	wp_enqueue_script(
-		'swiperjs',
-		get_template_directory_uri() . '/assets/library/swiperjs/js/swiper.min.js',
-		array(),
-		1,
-		true
-	);
 
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_script(

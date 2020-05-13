@@ -18,8 +18,15 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/*--------------------------------------------------------------
+# Bootstrap style
+--------------------------------------------------------------*/
+@import "bootstrap/bootstrap";
+
+/*--------------------------------------------------------------
+# Swiper style
+--------------------------------------------------------------*/
+@import "swiper/swiper";
 
 /*--------------------------------------------------------------
 # Variables
@@ -43,3 +50,4 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Global style
 --------------------------------------------------------------*/
 @import "global";
+

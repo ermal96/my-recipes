@@ -10,4 +10,3 @@
  * Load init file.
  */
 require get_template_directory() . '/includes/init.php';
-
